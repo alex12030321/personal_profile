@@ -94,11 +94,29 @@ main {
     padding: 25px 10px;
 }
 
-#about p {
+#about div#intro {
     width: 65%;
     float: left;
-    font-size: 26px;
-    padding-top: 50px;
+    padding-top: 30px;
+    margin-left: 30px;
+}
+
+#intro h1 {
+    font-size: 3em;
+}
+
+#intro h2 {
+    font-size: 2em;
+}
+
+#intro ul {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#intro li {
+    margin-left: 20px;
+    font-size: 16px;
 }
 
 #about img {
@@ -127,13 +145,14 @@ main {
     text-align: center;
     text-transform: uppercase;
     font-size: 36px;
+    margin-bottom: 30px;
 }
 
 #certification img {
     width: 300px;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
 }
 
 #rwd {
@@ -145,12 +164,13 @@ main {
     width: 300px;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
 }
 
 #javascript {
     width: 700px;
     margin: 30px auto 0 auto;
+    padding-bottom: 10px;
 }
 
 #javascript img {
@@ -158,7 +178,18 @@ main {
     height: auto;
     display: block;
     float: left;
-    margin: 0 25px;
+    margin: 0 25px 30px 25px;
+}
+
+#vue {
+    margin-top: 30px;
+}
+
+#vue img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 30px auto 0 auto;
 }
 
 hr {
@@ -170,6 +201,7 @@ hr {
 #contact {
     background-color: #fff;
     color: #888;
+    padding-top: 30px;
 }
 
 #contact h2 {
@@ -204,6 +236,9 @@ footer p {
         margin: 0 auto;
         padding: 20px 10px;
     }
+    #about div#intro {
+        margin-left: 0;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -219,15 +254,20 @@ footer p {
     #rwd, #javascript {
         width: 100%;
     }
-    #certification img, #rwd img, #javascript img {
-        width: 42.857143%;
-        margin: 0 auto;
+    #certification img, #rwd img, #javascript img, #vue img {
+        /* width: 42.857143%; */
+        width: 90%;
+        margin: 30px auto 0 auto;
         float: none;
     }
-    #about p {
+    #about div#intro {
         float: none;
         width: 100%;
         text-align: center;
+    }
+    #about li {
+        text-align: left;
+        margin: 0 25px;
     }
     #about img {
         float: none;
