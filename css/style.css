@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(136, 136, 136);
+}
+
+.clear {
+    clear: both;
+}
+
+header {
+    background-color: rgb(113,44,112);
+    height: 80px;
+}
+
+header div#head-contain {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+header img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    float: left;
+    border-radius: 100%;
+    margin-top: -5px;
+    margin-left: 30px;
+}
+
+header li {
+    list-style: none;
+    float: right;
+}
+
+header a {
+    display: block;
+    color: rgb(119, 119, 119);
+    height: 20px;
+    line-height: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+}
+
+header input[type="button"] {
+    display: none;
+}
+
+#btn-menu {
+    display: none;
+    color: rgb(119, 119, 119);
+    line-height: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+}
+
+#btn-menu li {
+    list-style: none;
+    color: #888;
+}
+
+#btn-menu a {
+    display: block;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+main {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#about {
+    background-color: rgb(170,170,170);
+    color: #fff;
+    padding: 25px 10px;
+}
+
+#about p {
+    width: 65%;
+    float: left;
+    font-size: 26px;
+    padding-top: 50px;
+}
+
+#about img {
+    width: 30%;
+    height: auto;
+    border-radius: 100%;
+    float: right;
+}
+
+#portfolio {
+    background-color: #fff;
+    color: #888;
+}
+
+#portfolio h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#certification {
+    margin-top: 30px;
+}
+
+#portfolio h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+}
+
+#certification img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#rwd {
+    width: 700px;
+    margin: 30px auto 0 auto;
+}
+
+#rwd img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#javascript {
+    width: 700px;
+    margin: 30px auto 0 auto;
+}
+
+#javascript img {
+    width: 300px;
+    height: auto;
+    display: block;
+    float: left;
+    margin: 0 25px;
+}
+
+hr {
+    width: 700px;
+    margin: 0 auto;
+    border: 3px solid #888;
+}
+
+#contact {
+    background-color: #fff;
+    color: #888;
+}
+
+#contact h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#contact p{
+    text-align: center;
+    font-size: 5em;
+}
+
+footer {
+    background-color: rgb(113,44,112);
+    color: #fff;
+    height: 78px;
+}
+
+footer p {
+    font-size: 20px;
+    line-height: 78px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    main {
+        width: 100%;
+    }
+    header div#head-contain {
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px 10px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #about p {
+        padding-top: 25px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    hr {
+        width: 70%;
+    }
+    #rwd, #javascript {
+        width: 100%;
+    }
+    #certification img, #rwd img, #javascript img {
+        width: 42.857143%;
+        margin: 0 auto;
+        float: none;
+    }
+    #about p {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    #about img {
+        float: none;
+        margin: 0 auto;
+        display: block;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    header ul {
+        display: none;
+    }
+
+    header input[type="button"] {
+        display: block;
+        color: #fff;
+        cursor: pointer;
+        border: 1px solid #fff;
+        float: right;
+        background-color: green;
+        padding: 10px;
+        font-size: 20px;
+        margin-top: -3px;
+    }
+}
